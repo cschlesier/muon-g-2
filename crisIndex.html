@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" type="text/css" href="crisStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Chivo|Unica+One" rel="stylesheet">
+
+    </head>
+<body>
+    
+    <div id="nav">
+        <div id="logo"><a href="">Muon g-2</a></div>
+            <div id="navlinks">
+        <a href="">Overview</a>
+        <a href="">Muon</a>
+        <a href="">Experiment</a>
+        <a href="">OtherShit</a>
+            </div>
+    </div>
+    
+    <div id="superToggle">
+    <div id="toggleIntro">I am a...</div>
+<div id="toggle">
+    <div id="scientist"> Scientist </div>
+    <div id="layman"> Layman </div>
+</div>
+        </div>
+    
+    <br />
+        <br />
+    <br />
+    <br />
+    <br />
+    
+    <div class="divider">
+        <div class="left text">
+            <h2>Section 1</h2>
+            <p id="Section1Content"></p>
+        </div>
+        <div class="right">
+            <img src="middle%20fingaaaa105.jpg">
+                        <img src="middle%20fingaaaa105.jpg">
+
+        </div>
+    </div>
+    
+    <div class="divider">
+        <div class="left">
+            <img src="middle%20fingaaaa105.jpg">
+        </div>
+        <div class="right text">
+            <h2>Section 2</h2>
+            <p id="Section2Content"></p>
+        </div>
+    </div>
+    
+    <div class="divider">
+        <div class="left text"> 
+            <h2>Section 3</h2>
+            <p id="Section3Content"></p>
+        </div>
+         <div class="right">
+            <img src="middle%20fingaaaa105.jpg">
+        </div>
+    </div>
+    
+    <div class="divider">
+        <div class="left">
+            <img src="middle%20fingaaaa105.jpg">
+        </div>
+        <div class="right text">
+            <h2>Section 4</h2>
+            <p id="Section4Content"></p>
+        </div>
+    </div>
+    
+     <script type="text/javascript">
+         var scientist1 = "This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. This is dummy text for section one. It is longer than the previous dummy text! Hail yes. Hail yes hail ues heeeeeeelllllll yehahhhhhhhh! Ok is that enough to get a good paragraph? let's see. "
+         var layman1 = "This is ANOTHER SET of dummy text! It is different from the scientist dummy text."
+         
+        var scientist2 = "Text One"
+        var layman2 = "Text Two"
+
+         var scientist3 = "Text One"
+        var layman3 = "Text Two"
+
+        var scientist4 = "Text One"
+        var layman4 = "Text Two"
+        
+        var whoAmI = "Scientist"
+
+        
+        var content1 = document.getElementById("Section1Content")
+        var content2 = document.getElementById("Section2Content")
+        var content3 = document.getElementById("Section3Content")
+        var content4 = document.getElementById("Section4Content")
+
+        var scientistButton = document.getElementById("scientist")
+        var laymanButton = document.getElementById("layman")
+        
+            scientistButton.style.backgroundColor = "black"
+            scientistButton.style.color = "white"
+            laymanButton.style.backgroundColor = "white"
+            laymanButton.style.color = "black"
+            content1.innerHTML = scientist1
+            content2.innerHTML = scientist2
+            content3.innerHTML = scientist3
+            content4.innerHTML = scientist4
+        
+        scientistButton.addEventListener('click', function(){
+            whoAmI = "Scientist"
+            scientistButton.style.backgroundColor = "black"
+            scientistButton.style.color = "white"
+            laymanButton.style.backgroundColor = "white"
+            laymanButton.style.color = "black"
+            content1.innerHTML = scientist1
+            content2.innerHTML = scientist2
+            content3.innerHTML = scientist3
+            content4.innerHTML = scientist4
+
+        }, false)
+        
+        scientistButton.onmouseover = function() {
+            scientistButton.style.color = "red"
+        };
+         
+         scientistButton.onmouseout = function() {
+            if (whoAmI == "Scientist") {scientistButton.style.color = "white"}
+             else {scientistButton.style.color = "black"};
+
+        };
+
+        laymanButton.addEventListener('click', function(){
+             whoAmI = "Layman"
+            laymanButton.style.backgroundColor = "black"
+            laymanButton.style.color = "white"
+            scientistButton.style.backgroundColor = "white"
+            scientistButton.style.color = "black"
+            content1.innerHTML = layman1
+            content2.innerHTML = layman2
+            content3.innerHTML = layman3
+            content4.innerHTML = layman4        }, false)
+        
+          laymanButton.onmouseover = function() {
+            laymanButton.style.color = "red"
+        };
+         
+         laymanButton.onmouseout = function() {
+            if (whoAmI == "Layman") {laymanButton.style.color = "white"}
+             else {laymanButton.style.color = "black"};
+
+        };
+
+    </script>  
+    
+</body>
+</html>
